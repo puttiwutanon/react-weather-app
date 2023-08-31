@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;1,100&family=Open+Sans:wght@300&family=Wix+Madefor+Display&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: "Wix Madefor Display", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 102vh;
+  width: 100px;
+  background-color: #2d2d30;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.sidebar .sidebar-content {
+  margin-top: 1rem;
+  color: #fff;
+  padding: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  .sidebar .sidebar-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.sidebar .sidebar-items {
+  color: #fff;
+  text-decoration: none;
+}
+.sidebar .sidebar-items:hover {
+  cursor: pointer;
+  color: #dddddd;
+  transition: 0.3s;
+}
+@media only screen and (max-width: 600px) {
+  .sidebar .sidebar-items {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+.main {
+  height: 100vh;
+  margin-top: 20%;
+  margin: 1rem;
+  border-radius: 10px;
+  width: 90%;
+}
+.main .main-city-temp {
+  margin-left: 2rem;
+}
+.main .main-city-temp .weather-info {
+  display: flex;
+  align-items: center; /* Center the content vertically */
+}
+.main .main-city-temp .weather-text {
+  flex: 1; /* Take available space, pushing the image to the right */
+}
+.main .main-city-temp img {
+  height: 10rem;
+  width: 10rem;
+  margin-right: 25rem;
+}
+@media only screen and (max-width: 600px) {
+  .main .main-city-temp img {
+    margin-right: 30rem;
+  }
+}
+
+.main-today-forecast {
+  align-items: center;
+  border-radius: 10px;
+  background-color: #2d2d30;
+  width: 95%;
+  padding: 1rem;
+}
+.main-today-forecast .main-today-forecast-temp {
+  width: auto;
+  display: flex;
+  overflow-x: auto;
+}
+.main-today-forecast .main-today-forecast-temp::-webkit-scrollbar {
+  width: 0;
+}
+.main-today-forecast .main-today-forecast-temp .main-today-forecast-temp-items {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-right: 1rem;
+  border-right: 1px solid #3e3e42;
+}
+
+.main-air-conditions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #2d2d30;
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: left;
+  width: 400px;
+}
+.main-air-conditions .air-condition-content {
+  display: flex;
+  width: 80%;
+}
+.main-air-conditions .air-condition-content .air-condition-items-row1, .main-air-conditions .air-condition-content .air-condition-items-row2 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 9rem;
+}
+
+.searchbar input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  background-color: #2d2d30;
+  color: #fff;
+  padding: 1rem;
+  margin-right: 5px;
+}
+.searchbar button {
+  background-color: #2d2d30;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 360px;
+}
+
+.leaflet-container {
+  margin: 1rem;
+  height: 95vh;
+  width: 400vh;
+}
+@media only screen and (max-width: 600px) {
+  .leaflet-container {
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+.home {
+  display: flex;
+}
+@media only screen and (max-width: 600px) {
+  .home {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .astronomy-items {
+    flex-direction: column;
+  }
+}
+
+.astronomy-items-sun {
+  border-radius: 10px;
+  background-color: #2d2d30;
+  padding: 1rem;
+  margin: 1rem;
+  width: 300px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.astronomy-items-sun .astronomy-items-sun-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.astronomy-items-sun img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.astronomy-items-moon {
+  border-radius: 10px;
+  background-color: #2d2d30;
+  padding: 1rem;
+  margin: 1rem;
+  width: 400px;
+}
+.astronomy-items-moon .astronomy-items-moon-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.astronomy-items-moon img {
+  width: 10rem;
+  height: 10rem;
+}/*# sourceMappingURL=App.css.map */
